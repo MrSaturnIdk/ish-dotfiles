@@ -1,0 +1,7 @@
+# Whitelist strategy
+**
+
+!.*rc
+!.tmux.conf
+!.*ignore
+!/.gitignore_global
