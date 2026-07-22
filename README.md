@@ -1,7 +1,11 @@
 # ish-dotfiles
-My dotfiles within iSH
+My dotfiles within iSH.
 
 I don't have a computer, but I've gotten pretty good with iSH.
+
+Yes, I develop in iSH.
+
+This is what happens when you're desperate.
 # License
 Licensed under the [Unlicense](./LICENSE), the developer equivalent of giving
 the project a license while also not doing so at the same time.
