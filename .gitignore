@@ -5,3 +5,6 @@
 !.tmux.conf
 !.*ignore
 !/.gitignore_global
+
+!/*.md
+!/LICENSE
