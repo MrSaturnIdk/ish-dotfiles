@@ -6,3 +6,4 @@ alias mktar='tar -X ~/.tarignore -czvf'
 alias rmswp='find . -type f -name ".*.sw?" -delete'
 
 printf 'Welcome back Mr Saturn!\n'
+neofetch
