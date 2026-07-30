@@ -2,7 +2,6 @@
 **
 
 !.*rc
-!.tmux.conf
 !.*ignore
 !/.gitignore_global
 !*_profile
