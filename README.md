@@ -1,4 +1,4 @@
-# ish-dotfiles
+# iSH Dotfiles
 My dotfiles within iSH.
 
 I don't have a computer, but I've gotten pretty good with iSH.
