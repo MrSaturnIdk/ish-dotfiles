@@ -2,7 +2,8 @@
 alias ls='ls -A --color=always'
 alias grep='grep --color=always'
 
-alias mktar='tar -X ~/.tarignore -czvf'
+alias mktargz='tar -X ~/.tarignore -czvf'
+alias mktar='tar -X ~/.tarignore -cvf'
 alias rmswp='find . -type f -name ".*.sw?" -delete'
 
 export CXX=clang++
