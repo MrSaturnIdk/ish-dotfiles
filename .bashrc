@@ -11,4 +11,3 @@ export CXX=clang++
 export CC=clang
 
 printf 'Welcome back Mr Saturn!\n'
-neofetch
