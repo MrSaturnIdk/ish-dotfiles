@@ -10,4 +10,8 @@ alias lspkg="printf '%s\n' \"${PATH//:/$'\n'}\" | xargs ls -A --color=auto"
 export CXX=clang++
 export CC=clang
 
+if [ -f /usr/share/bash-completion/bash_completion ]; then
+    source /usr/share/bash-completion/bash_completion
+fi
+
 printf 'Welcome back Mr Saturn!\n'
