@@ -14,3 +14,6 @@ set softtabstop=4
 set autoindent
 
 set nowrap
+
+set colorcolumn=120
+highlight ColorColumn ctermbg=215
