@@ -18,5 +18,6 @@ help2() {
 
 export CXX=clang++
 export CC=clang
+export MANPAGER='vim +MANPAGER'
 
 printf 'Welcome back Mr Saturn!\n'

@@ -2,6 +2,8 @@ syntax on
 set number
 set ruler
 
+runtime ftplugin/man.vim
+
 set backspace=indent,eol,start
 
 set hlsearch
