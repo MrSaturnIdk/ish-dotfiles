@@ -11,7 +11,7 @@ alias browse='lynx -accept_all_cookies'
 help2() {
     if [ "$#" -ne 1 ]; then
         printf '\033[1;31mError:\033[0m Only provide 1 argument\n'
-        exit 1;
+        return 1
     fi
     $1 --help | vim -M -c 'set filetype=help' -
 }
