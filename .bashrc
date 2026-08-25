@@ -13,7 +13,7 @@ help2() {
         printf '\033[1;31mError:\033[0m Only provide 1 argument\n'
         exit 1;
     fi
-    $1 --help | vim -M -
+    $1 --help | vim -M -c 'set filetype=help' -
 }
 
 export CXX=clang++
