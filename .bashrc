@@ -17,7 +17,10 @@ help2() {
         printf '\033[1;31mError:\033[0m Command "%s" not found\n' "$1"
         return 1
     fi
-    $1 --help | vim -M -c 'set filetype=help' -
+
+    tempfile=$(mktemp /tmp/help2.XXXXXX)
+    $1 --help > ${tempfile}
+    vim -M -c 'set filetype=help' ${tempfile}
 }
 
 export CXX=clang++
