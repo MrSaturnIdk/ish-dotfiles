@@ -19,5 +19,6 @@ help2() {
 export CXX=clang++
 export CC=clang
 export MANPAGER='vim +MANPAGER'
+export MAKEFLAGS="-j$(nproc)"
 
 printf 'Welcome back Mr Saturn!\n'
