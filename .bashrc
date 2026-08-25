@@ -13,6 +13,10 @@ help2() {
         printf '\033[1;31mError:\033[0m Only provide 1 argument\n'
         return 1
     fi
+    if ! command -v $1 > /dev/null 2>&1; then
+        printf '\033[1;31mError:\033[0m Command "%s" not found\n' "$1"
+        return 1
+    fi
     $1 --help | vim -M -c 'set filetype=help' -
 }
 
