@@ -22,9 +22,13 @@ help2() {
     if [ "$#" -gt 1 ]; then
         command_name="$1"
         shift
-        ${command_name} $@ > ${tempfile}
+        if ! ${command_name} $@ > ${tempfile}; then
+            return 1
+        fi
     else
-        $1 --help > ${tempfile}
+        if ! $1 --help > ${tempfile}; then
+            return 1
+        fi
     fi
     vim -M -c 'set filetype=help' ${tempfile}
 }
