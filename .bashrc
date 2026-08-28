@@ -37,5 +37,10 @@ export CXX=clang++
 export CC=clang
 export MANPAGER='vim +MANPAGER'
 export MAKEFLAGS="-j$(nproc)"
+if [ "$HOSTNAME" = "iPhone" ]; then
+    export PS1="localhost/\u:\w\$ "
+else
+    export PS1="\h/\u:\w\$ "
+fi
 
 printf 'Welcome back Mr Saturn!\n'
