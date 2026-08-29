@@ -33,8 +33,8 @@ help2() {
     vim -M -c 'set filetype=help' ${tempfile}
 }
 
-export CXX=clang++
-export CC=clang
+export CXX='ccache clang++'
+export CC='ccache clang'
 export MANPAGER='vim +MANPAGER'
 export MAKEFLAGS="-j$(nproc)"
 if [ "$HOSTNAME" = "iPhone" ]; then
